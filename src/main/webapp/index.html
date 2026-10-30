@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <div class="sidebar">
+            <div class="brand">🎓 EduStream</div>
+            <a href="home">Dashboard</a>
+            <a href="index.html" class="active">Add Student</a>
+            <a href="view">View Students</a>
+            <a href="adminMarks">Marks</a>
+            <a href="adminAttendance">Attendance</a>
+            <a href="logout" class="logout">Logout</a>
+        </div>
+        <div class="main-content">
+            <div class="topbar"><div><h1>Add New Student (Admin)</h1></div></div>
+            <form class="panel" action="insert" method="post">
+                <p class="field-label">Name</p>
+                <input type="text" name="name" required>
+                <p class="field-label">Course</p>
+                <input type="text" name="course" required>
+                <p class="field-label">Department</p>
+                <input type="text" name="department" required>
+                <p class="field-label">Email</p>
+                <input type="text" name="email" required>
+                <p class="field-label">Clubs (optional)</p>
+                <input type="text" name="clubs">
+                <p class="field-label">Student Login Username</p>
+                <input type="text" name="username" required>
+                <p class="field-label">Student Login Password</p>
+                <input type="text" name="password" required>
+                <input type="submit" value="Add Student">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
